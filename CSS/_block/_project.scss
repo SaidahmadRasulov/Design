@@ -1,0 +1,97 @@
+.project__section {
+    padding: 3rem 0;
+    background: #F9FAFF;
+
+    .project__title {
+        h1 {
+
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            color: $black;
+            text-align: center;
+            margin-bottom: 55px;
+
+        }
+    }
+
+    .project__cards {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        flex-wrap: wrap;
+
+        .card__1 {
+            width: 31%;
+            height: 375px;
+            background: #FFFFFF;
+            border-radius: 10px;
+        }
+
+        .card__header {
+            width: 100%;
+            filter: drop-shadow(0px 4px 22px rgba(95, 95, 95, 0.05));
+
+            img {
+                width: 100%;
+                border-radius: 5px;
+            }
+        }
+
+        .card__body {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            color: $black;
+            text-align: center;
+            padding-top: 20px;
+        }
+    }
+
+    .project__btn {
+        button {
+            width: 242px;
+            height: 53px;
+            background: linear-gradient(2.79deg, #F35F2F -13.68%, rgba(243, 95, 47, 0.75) 121.16%);
+            border: 2px solid orange;
+            color: white;
+            text-transform: uppercase;
+            font-size: 20px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 74px;
+            margin-left: 500px;
+            &:hover {
+                background: #fff;
+                color: black;
+            }
+        }
+    }
+
+    @media (max-width: 425px) {
+        .project__cards {
+            .card {
+                width: 45%;
+                height: 250px;
+            }
+        }
+        .project__btn {
+            button {
+                margin-left: 50px;
+            }
+        }
+    } 
+    @media (min-width: 425px) and (max-width: 768px){
+        .project__cards {
+            .card {
+                width: 45%;
+                height: 300px;
+            }
+        }
+        .project__btn {
+            button {
+                margin-left: 50px;
+            }
+        }
+    } 
+}

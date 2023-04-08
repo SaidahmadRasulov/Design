@@ -1,0 +1,106 @@
+.meet__section {
+    padding: 2rem 0;
+    background: #F9FAFF;
+
+    .meet__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .meet__title {
+        h1 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            color: #3D3D3F;
+            text-align: center;
+        }
+
+        margin-bottom: 45px;
+    }
+
+    .meet__cards {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .card__2 {
+            width: 267px;
+            height: 400px;
+            background: linear-gradient(138.88deg, rgba(254, 254, 254, 0) -2.44%, #F9F9F9 -2.43%, rgba(254, 254, 254, 0.51) 98.26%);
+            border: 1px solid #EEEFF1;
+            filter: drop-shadow(0px 4px 120px rgba(0, 0, 0, 0.05));
+            border-radius: 10px;
+        }
+
+        .card__header {
+            width: 90%;
+            height: 260px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                padding-left: 5px;
+                padding-top: 10px;
+            }
+            .w2 {
+                padding-top: 15px;
+            }
+        }
+
+        .card__body {
+            h3 {
+                font-family: 'DM Sans', sans-serif;
+                padding-top: 20px;
+                text-align: center;
+                font-size: 18px;
+                color: $black;
+                font-weight: 500;
+            }
+
+            p {
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                text-align: center;
+                color: #999999;
+                margin-bottom: 17px;
+            }
+        }
+        .card__footer {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            i {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    @media (max-with: 425px) {
+       .meet__cards {
+        
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+        .card {
+            margin-bottom: 25px;
+        }
+       }
+    }
+    @media (min-with: 425px) and (max-width: 768px) {
+        .meet__cards {
+         
+         display: flex;
+         align-items: center;
+         margin-left: 50px;
+         justify-content: center;
+         flex-direction: column;
+         gap: 25px;
+         .card {
+             margin-bottom: 25px;
+         }
+        }
+     }
+}

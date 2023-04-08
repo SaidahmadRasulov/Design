@@ -1,0 +1,14 @@
+.design__section {
+    padding: 2rem 0;
+    .design__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .div {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 30px;
+    }
+}
